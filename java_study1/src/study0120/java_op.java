@@ -12,18 +12,18 @@ public class java_op {
 		// 변수이름의 첫글자는 문자로, 자바 예약어는 사용불가
 		
 		// 자바에서 결과로 출력하는방법
-		System.out.println("출력하는방법");
+		// System.out.println("출력하는방법");
 		// 자바에서 키보드를 통해 데이터를 입력하는 방법
 		// 자바에서 입력하기 위한 순서
 		// 1. 입력 객체 생성
 		// 2. 입력 객체를 통해 데이터에 맞는 입력메서드 호출
 		
 		// Scanner 변수이름 = new Scanner(System.in);
-		Scanner input = new Scanner(System.in);
+		// Scanner input = new Scanner(System.in);
 		
 		// num 이라는 변수에 정수 데이터 입력하여 저장하기
 		// nextInt()가 정수 데이터 입력하기 위한 메서드이다.
-		int num = input.nextInt();
+		// int num = input.nextInt();
 		/*
 		 * 1월 20일 과제(변수 활용 문제)
 		 * 
@@ -40,7 +40,7 @@ public class java_op {
 		 * 
 		 * int totalApple = appleBox * apple;
 		 * int totalOrange = orangeBox * orange;
-		 * int totalfruit = totalApple + totalOrange;
+		 * int totalFruit = totalApple + totalOrange;
 		 * System.out.println("사과 총 갯수 : " + totalApple);
 		 * System.out.println("오렌지 총 갯수 : " + totalOrange);
 		 * System.out.println("과일 총 갯수 : " + totalFruit);
