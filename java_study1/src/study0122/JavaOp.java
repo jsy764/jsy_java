@@ -1,5 +1,7 @@
 package study0122;
 
+import java.util.Scanner;
+
 public class JavaOp {
 
 	public static void main(String[] args) {
@@ -30,6 +32,16 @@ public class JavaOp {
 		
 		// num = num + 5 * num3;
 		num += 5 * num3;
+		
+		Scanner scan = new Scanner(System.in); // 키보드 입력받기위해 생성
+		
+		// 원의 둘레 구하기
+		int r=0, dist=0;
+		System.out.println("반지름 : ");
+		r = scan.nextInt();
+		
+		dist = (int)(r * 2 * 3.14);
+		
+		System.out.println(" 원의 둘레 : " + dist);
 	}
-
 }
