@@ -30,6 +30,9 @@ public class JavaOp3 {
 		
 		// System.out.println(word == word2);
 		System.out.println(word.equals(word2));
+		System.out.println('a'>'b');
 		// == 비교연산자는 비교하는 2개의 값이 같은 자료형인지 판별
+		
+		System.out.println(10 !=5);
 	}
 }
