@@ -55,12 +55,53 @@ public class JavaOp4 {
 //		String 결과  = (num1 == num2) ? "두숫자가 같다." : "두숫자가 같지않다.";
 //		System.out.println(결과);
 		
-		System.out.print("정수 입력 : ");
-		int num = scan.nextInt();
+//		System.out.print("정수 입력 : ");
+//		int num = scan.nextInt();
+//		
+//		// 입력한 정수가 양수냐 음수냐 , 0 이냐
+//		String res = (num > 0) ? "양수" : ( num < 0 ) ? "음수" : "0이다";
+//		System.out.println(res);
 		
-		// 입력한 정수가 양수냐 음수냐 , 0 이냐
-		String res = (num > 0) ? "양수" : ( num < 0 ) ? "음수" : "0이다";
-		System.out.println(res);
+		// 바이킹을 타기 위해서는 키가 135 이상이여야 한다.
+		// 바이킹 탑승여부를 출력해라. (키 입력받기)
+		
+//		System.out.println("키를 입력 : ");
+//		int height = scan.nextInt();
+//		String res = (height >= 135) ? "탑승가능": "탑승불가";
+//		System.out.println(res);
+		
+//		System.out.print("1. 파미향짬뽕 2. 쿠켄 돈가스 3. 공주순대 : ");
+//		int select = scan.nextInt();
+//		
+//		int price = (select == 1) ? 9000 : 0;
+//		price = (select == 2) ? 8000 : price;
+//		price = (select == 3) ? 6500 : price;
+//		
+//		System.out.println(" 가격은 " + price);
+		
+		// 정수 세개를 키보드를 통해 입력받기
+		// 세 정수 중에서 가장 큰 정수를 출력하세요.
+		// 두개가 같은경우, 세개가 같은경우는 배제하고!!!
+		
+//		System.out.print("정수입력 : ");
+//		int n1 = scan.nextInt();
+//		System.out.print("정수입력 : ");
+//		int n2 = scan.nextInt();
+//		System.out.print("정수입력 : ");
+//		int n3 = scan.nextInt();
+//		
+//		int result = (n1 > n2) ? n1 : n2;
+//		result = (result > n3) ? result : n3;
+//		System.out.println(result);
+		
+		System.out.println("세 정수 입력 : ");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int num3 = scan.nextInt();
+		
+		int max = (num1 > num2) ? num1 : num2;
+		max = (max > num3) ? max : num3;
+		System.out.println("가장 큰수 : "+ max);
 	}
 }
 
