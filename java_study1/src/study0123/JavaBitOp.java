@@ -3,8 +3,10 @@ package study0123;
 public class JavaBitOp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		// 비트 논리 연산자
+		System.out.println(27 & 13); // and 연산
+		System.out.println(27 | 13); // or 연산
+		System.out.println(27 ^ 13); // xor연산
 	}
 
 }
