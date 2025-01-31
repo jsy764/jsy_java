@@ -41,16 +41,60 @@ public class JavaIf2 {
 //		} else {
 //			System.out.println("현재 사각형은 직각사각형이다.");
 				// 입력한 숫자가 짝수인가 홀수인가?
+//				int num=0;
+//				
+//				System.out.print("숫자 입력 : ");
+//				num = in.nextInt();
+//				
+//				if(num%2 == 0) {
+//					System.out.println("짝수이다.");
+//				} else {
+//					System.out.println("홀수이다.");
+//				}
+		
+//				int num =15;
+//				if(num > 0) {
+//					System.out.println("양수이다.");
+//				} else if(num < 0) {
+//					System.out.println("음수이다.");
+//				} else {
+//					System.out.println("0 이다.");
+//				}
+		
+//				int score = 81; // 100~90은 A, 89~80은 B, 79~70은 C 나머지는 F
+//				if(score<=100 & score >=90) {
+//					System.out.println(" A 학점이다.");
+//				}
+//				else if(score >= 80) {
+//					System.out.println(" B 학점이다.");
+//				}
+//				else if(score >= 70) {
+//					System.out.println(" C 학점이다.");
+//				}
+//				else {
+//					System.out.println(" F 학점이다.");
+//				}
+				
+				// 1입력하면 데이터 저장이라고 출력 
+				// 2입력하면 데이터 살제하고 출력 
+				// 3입력하면 종료라고 출력
+				// 1,2,3 이 아닌 숫자는 잘못입력했습니다. 라고 출력
+				// 정수를 입력하여 위 내용처럼 실행될 수 있게 만들어라
 				int num=0;
-				
-				System.out.print("숫자 입력 : ");
+				System.out.print("정수 입력 : ");
 				num = in.nextInt();
+				if(num == 1) {
+					System.out.println("데이터 저장");
+				} else if(num == 2) {
+					System.out.println("데이터 삭제");
+				} else if(num == 3) 
+					System.out.println("종료");
+				 else 
+					System.out.println("잘못 입력했습니다.");
 				
-				if(num%2 == 0) {
-					System.out.println("짝수이다.");
-				} else {
-					System.out.println("홀수이다.");
-				}
+				
+				
+				
 		}
 	}
 /*
