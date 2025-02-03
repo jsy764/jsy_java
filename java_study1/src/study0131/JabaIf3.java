@@ -60,7 +60,7 @@ public class JabaIf3 {
 		
 		int price = cost + (totalTime/10*100);
 		System.out.println("주차 요금 : "+ price+"원");
-				
+		
 	} 
 }
 
