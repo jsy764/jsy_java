@@ -80,6 +80,7 @@ public class JavaLoop1 {
 //		System.out.println("2*3="+(2*3));
 //		System.out.println("2*4="+(2*4));
 		
+		// 시간 남으면 동전 앞뒤 맞추기 게임을 10판 진행해서 10번 게임을 하는동안 몇번 맞췄는지 출력
 	}
 }
 // 반복문 - for, while, do~while
