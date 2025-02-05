@@ -17,7 +17,7 @@ public class JavaLoop3 {
 //			System.out.println(i);
 //			i++; //증감식
 //		}
-
+		// 21~49 -> * 29 + 21
 		int com = (int)(Math.random()*50+1);
 		
 		while(true) {
