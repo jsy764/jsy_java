@@ -55,6 +55,7 @@ public class JavaLoop3 {
 			if(money<판돈) break;
 		}
 		System.out.println("내돈은 : "+money);
+		System.out.println("정답 몇번 : " + win);
 		
 	}
 }
