@@ -18,8 +18,8 @@ public class JavaLoop3 {
 //			i++; //증감식
 //		}
 		// 21~49 -> * 29 + 21
-		System.out.print("정수 입력 : ");
-		int num = scan.nextInt();
+//		System.out.print("정수 입력 : ");
+//		int num = scan.nextInt();
 		
 //		while(true) {// 오늘의 과제는 1~50중 하나를 내가 입력하고 내가 입력한 숫자를 컴퓨터가 맞춰야한다.(random 사용)
 //			// 무작위로 맞추는게 아니고 범위를 좁히면서 맞출 수 있도록 해야한다.
@@ -36,7 +36,25 @@ public class JavaLoop3 {
 		
 		// 동전 앞면 뒷면 맞추기 게임
 		// 내 돈이 바닥 날때까지 게임진행!!
+		System.out.print("당신의 머니는 얼마? : ");
+		int money=scan.nextInt();
+		final int 판돈=1000;
+		int win=0;
 		
+		while(true) {
+			int coin = (int)(Math.random()*2+1); // 1앞 2뒤
+			System.out.print("1.앞면, 2.뒷면 : ");
+			int user = scan.nextInt();
+			if(user == coin) {
+				System.out.println("정답!!");
+				win++;
+			}
+			else
+				System.out.println("땡!!");
+			money -= 판돈; // 1번 진행시 1000원씩 감소
+			if(money<판돈) break;
+		}
+		System.out.println("내돈은 : "+money);
 		
 	}
 }
