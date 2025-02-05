@@ -18,11 +18,11 @@ public class JavaLoop3 {
 //			i++; //증감식
 //		}
 		// 21~49 -> * 29 + 21
-		int com = (int)(Math.random()*50+1);
+		System.out.print("정수 입력 : ");
+		int num = scan.nextInt();
 		
 		while(true) {
-			System.out.print("정수 입력 : ");
-			int num = scan.nextInt();
+			int com = (int)(Math.random()*50+1);
 			if(com==num) {
 				System.out.println("정답 ! ");
 				break;

@@ -1,4 +1,4 @@
-package study01221;
+package study0121;
 
 public class java_print {
 
