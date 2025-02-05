@@ -21,19 +21,23 @@ public class JavaLoop3 {
 		System.out.print("정수 입력 : ");
 		int num = scan.nextInt();
 		
-		while(true) {
-			int com = (int)(Math.random()*50+1);
-			if(com==num) {
-				System.out.println("정답 ! ");
-				break;
-			}
-			if(com>num)
-				System.out.println("업");
-			if(com<num)
-				System.out.println("다운");
-		}
+//		while(true) {// 오늘의 과제는 1~50중 하나를 내가 입력하고 내가 입력한 숫자를 컴퓨터가 맞춰야한다.(random 사용)
+//			// 무작위로 맞추는게 아니고 범위를 좁히면서 맞출 수 있도록 해야한다.
+//			int com = (int)(Math.random()*50+1);
+//			if(com==num) {
+//				System.out.println("정답 ! ");
+//				break;
+//			}
+//			if(com>num)
+//				System.out.println("업");
+//			if(com<num)
+//				System.out.println("다운");
+//		}
 		
+		// 동전 앞면 뒷면 맞추기 게임
+		// 내 돈이 바닥 날때까지 게임진행!!
 		
 		
 	}
 }
+
