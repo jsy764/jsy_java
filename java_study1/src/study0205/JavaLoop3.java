@@ -17,9 +17,15 @@ public class JavaLoop3 {
 //			System.out.println(i);
 //			i++; //증감식
 //		}
+		int com = (int)(Math.random()*50+1);
+		
 		while(true) {
 			System.out.print("정수 입력 : ");
 			int num = scan.nextInt();
+			if(com==num) {
+				System.out.println("정답 ! ");
+				break;
+			}
 		}
 		
 		
