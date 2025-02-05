@@ -1,8 +1,11 @@
-package study0225;
+package study0205;
+
+import java.util.Scanner;
 
 public class JavaLoop3 {
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
 		
 		//for(초기값;조건식;증감식)
 		//for(int i=1; i<=10; i++)
