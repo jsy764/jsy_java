@@ -1,4 +1,4 @@
-package study0121;
+package study01221;
 
 import java.util.Scanner;
 
