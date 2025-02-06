@@ -52,10 +52,37 @@ public class JavaLoopTest1 {
 //		예) 나 - 3,4 컴 - 1,3 내가 이김
 //			나 - 5,6 컴 - 1, 1 컴퓨터이김
 //		5판을 진행 했을때 몇승 몇패 몇무인지 출력
-		int user, com, i=0;
-		while(i<5) {
-			
-		}
+		int user1, user2, com1, com2, i, num1, num2, win=0, lose=0, draw=0;
+//		for(i=0; i<5; i++) {//user는 사람 com은 컴퓨터
+//			user1=0; user2=0; com1=0; com2=0; num1=0; num2=0;
+//			user1 = (int)(Math.random()*6+1);
+//			num1 += user1;
+//			user2 = (int)(Math.random()*6+1);
+//			num1 += user2;
+//			com1 = (int)(Math.random()*6+1);
+//			num2 += com1;
+//			com2 += (int)(Math.random()*6+1);
+//			num2 += com2;
+//			if(num1>num2 || user1==user2)
+//				win++;
+//			else if(num2>num1 || com1==com2)
+//				lose++;
+//			else if(num1==num2 || (user1==user2 && com1==com2))
+//				draw++;
+//		}
+//		System.out.println("이긴 횟수 : "+win);
+//		System.out.println("진 횟수 : "+lose);
+//		System.out.println("비긴 횟수 : "+draw);
+		
+//		베스킨라빈스 31게임 만들기
+//		나와 컴퓨터 둘이서 진행
+//		31을 제시하는쪽이 패배
+//		나부터 시작한다.
+//		숫자를 몇개를 제시할 것인지 갯수를 입력하면 자동으로 숫자가 나온다.
+//		컴퓨터는 렌덤을 이용해서 몇개 재시험할것인지 해야한다.
+//		숫자는 1개부터 3개까지 가능
+		int num=0;
+		
 		
 		
 		
