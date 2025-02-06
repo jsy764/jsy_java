@@ -52,7 +52,10 @@ public class JavaLoopTest1 {
 //		예) 나 - 3,4 컴 - 1,3 내가 이김
 //			나 - 5,6 컴 - 1, 1 컴퓨터이김
 //		5판을 진행 했을때 몇승 몇패 몇무인지 출력
-		
+		int user, com, i=0;
+		while(i<5) {
+			
+		}
 		
 		
 		
