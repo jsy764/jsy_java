@@ -52,7 +52,7 @@ public class JavaLoopTest1 {
 //		예) 나 - 3,4 컴 - 1,3 내가 이김
 //			나 - 5,6 컴 - 1, 1 컴퓨터이김
 //		5판을 진행 했을때 몇승 몇패 몇무인지 출력
-		int user1, user2, com1, com2, i, num1, num2, win=0, lose=0, draw=0;
+//		int user1, user2, com1, com2, i, num1, num2, win=0, lose=0, draw=0;
 //		for(i=0; i<5; i++) {//user는 사람 com은 컴퓨터
 //			user1=0; user2=0; com1=0; com2=0; num1=0; num2=0;
 //			user1 = (int)(Math.random()*6+1);
