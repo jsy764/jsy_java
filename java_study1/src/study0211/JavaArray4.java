@@ -1,4 +1,4 @@
-package study0210;
+package study0211;
 
 import java.util.Arrays;
 import java.util.Scanner;
