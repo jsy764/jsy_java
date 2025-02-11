@@ -102,29 +102,40 @@ public class JavaArray2 {
 //		else 
 //			System.out.println("다른 이름");
 		
-		String name1 = "주동건";
-		String name2 = "이동건";
-		if(name1.equals(name2))
-			System.out.println("같은 이름");
-		else
-			System.out.println("다른 이름");
-		
-		
-		
-		System.out.println(name1.compareTo(name2));
+//		String name1 = "주동건";
+//		String name2 = "이동건";
+//		if(name1.equals(name2))
+//			System.out.println("같은 이름");
+//		else
+//			System.out.println("다른 이름");
+//		
+//		
+//		
+//		System.out.println(name1.compareTo(name2));
 		// compareTo : 0 이라면 두 문자열 동일
-		// 		양수 : 사전적 순서가 앞인 경우
 		//		음수 : 사전적 순서가 뒤인 경우
-		
-		// 오늘의 과제는 랜덤 범위 1~50의 랜덤 숫자 중에서 짝수 15개를 배열에 저장하고 15개 전부 저장되면 배열을 출력해하. 슛자 중복은 상관없음
-		
-		int[] num = new int[] {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-		
-		for(int a : num) {
-			System.out.println(a);
-		}
+//		int[] num = new int[] {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+		// 		양수 : 사전적 순서가 앞인 경우
+//		
+//		for(int a : num) {
+//			System.out.println(a);
+//		}
 //		for(int i=0; i<num.length; i++) {
 //			System.out.println(num[i]);
 //		}
+		
+		// 오늘의 과제는 랜덤 범위 1~50의 랜덤 숫자 중에서 짝수 15개를 배열에 저장하고 15개 전부 저장되면 배열을 출력해하. 슛자 중복은 상관없음
+		int[] arr = new int[15];
+		int num;
+		for(int i=0; i<15; i++) {
+			num = (int)(Math.random()*25+1)*2;
+			 if(num%2==0) 
+					arr[i] = num;
+		}
+
+		for(int i=0; i<15; i++) {
+				System.out.print(arr[i]+" "); 
+		} 
+
 	}
 }
