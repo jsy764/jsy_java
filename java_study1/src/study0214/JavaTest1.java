@@ -47,16 +47,16 @@ public class JavaTest1 {
 	            "strawberry", "dragonfruit", "lime", "pear", "peach"
 		};
 		
-		System.out.print("문자 입력 : ");
-		char ch = sc.next().charAt(0);
-		int num=0;
-		for(int i = 0; i < word.length; i++) {
-			if(word[i].charAt(0) == ch) {
-				System.out.println(word[i]);
-				num++;
-			}
-		}
-		System.out.print("총 구한 개수 : "+num);
+//		System.out.print("문자 입력 : ");
+//		char ch = sc.next().charAt(0);
+//		int num=0;
+//		for(int i = 0; i < word.length; i++) {
+//			if(word[i].charAt(0) == ch) {
+//				System.out.println(word[i]);
+//				num++;
+//			}
+//		}
+//		System.out.print("총 구한 개수 : "+num);
 		
 		
 //		System.out.print("알파벳 입력 : ");
@@ -76,7 +76,33 @@ public class JavaTest1 {
 		
 		// 문제3. 영화관 예약 사이트를 만들려고 한다. 영화관에 관별로 좌석수가 다르다. 3관의 좌석수는 96개(8줄 12열)이다. 좌석에 예약완료 된 곳은 1로 표시 비어있는 좌석은 0으로 표시
 		// 몇명 예약할것인지 인원수를 입력하면 연속적으로 비어있는 자리로 지정해준다. 몇번째 좌석에 예약이 되었는지 출력
-		
+		int y=0, x=0;
+		System.out.print("인원수 입력 : ");
+		int num=sc.nextInt();
+		int[][] arr = new int[8][12];
+		for(y=0; y<8 ;y++) {
+			for(x=0; x<12; x++) {
+				arr[y][x]=(int)(Math.random()*2+0);
+			}
+		}
+		int n=num;
+		for(y=0; y<8; y++) {
+			for(x=0; x<12; x++) {
+				if(arr[y][x]==0)
+					num--;
+				if(arr[y][x]!=0)
+					num = n;
+				if(num==0)
+					System.out.printf("좌석[%d][%d]에 배치되었습니다.", y+1, x+1);				
+			}
+		}
+		System.out.println();
+		for(y=0; y<8; y++) {
+			for(x=0; x<12; x++) {
+				System.out.print(arr[y][x]);
+			}
+			System.out.println();
+		}
 		
 		
 	}
