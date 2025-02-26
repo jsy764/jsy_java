@@ -8,6 +8,8 @@ public class JavaInherit1 {
 		Aircon air = new Aircon("캐리어", 542000, "ca18t");
 		Computer com = new Computer("삼성", 1730000, "매직스테이션10");
 		
+		System.out.println(tv.brand);
+		
 		tv.power();
 		air.power();
 		com.power();
