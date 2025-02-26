@@ -9,10 +9,9 @@ public class Buyer {
 	public Buyer(int money) { // Buyer 객체생성시 동작 할 생성자 메서드
 		this.money=money;
 	}
-	
-	// set, get 메서드
-	public String toString() { 
-		return "보유머니 : "+money;
+
+	public int getMoney() {
+		return money;
 	}
 
 	public void setMoney(int money) {
@@ -26,5 +25,12 @@ public class Buyer {
 	public void setItem(Fruit item) {
 		this.item = item;
 	}
+	
+	// set, get 메서드
+	public String toString() { 
+		return "보유머니 : "+money;
+	}
+
+	
 	
 }
