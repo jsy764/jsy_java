@@ -3,19 +3,15 @@ package inherit1;
 public class JavaInherit1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Tv tv = new Tv();
-//		tv.onOff=true; // 전원 on
-		tv.power(); // 전원 on
-		tv.power(); // 전원 off
-		tv.brand="삼성";
-		tv.price=1200000;
-		tv.name="OLED ST60";
 		
-		Computer com = new Computer();
-		com.onOff=true;
+		Tv tv = new Tv("삼성", 950000, "st60");
+		Aircon air = new Aircon("캐리어", 542000, "ca18t");
+		Computer com = new Computer("삼성", 1730000, "매직스테이션10");
+		
+		tv.power();
+		air.power();
+		com.power();
 	}
-
 }
 
 /* 상속 - 클래스들의 관계를 부모-자식 관계로 설정한다.
