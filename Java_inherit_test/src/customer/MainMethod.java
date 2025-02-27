@@ -1,7 +1,8 @@
 package customer;
 
 import java.sql.*;
-
+import java.util.Scanner;
+import java.util.Date;
 import store.*;
 
 public class MainMethod {
@@ -112,6 +113,18 @@ public class MainMethod {
 			System.out.println((i+1)+". "+menu[i]);
 			// 출력 결과 -> 바나나 2500원 350ml
 		}
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("구매 번호 : ");
+		int num = sc.nextInt();
+		
+		// 결제 진행하고 언제 주스를 사먹었는지 어떤 주스인지 기록
+		ctm1.setMoney(ctm1.getMoney()-menu[num-1].getCost()); 
+		// 내가 만약 5번 선택했다면 num-1은 4니까 menu배열의 4번 인덱스의 객체를 선택한 것이고 해당객체의 getCost니까 cost 변수의 값을 가지고 온다.
+		// ctm1.getMoney는 get으로 시작하는 메서드 변수의값 출력이니까 10000을 가지고온다. 그러니까 10000-3500 된다. 이것의 결과 6500을 setMoney를 통해 
+		// money 변수에 저장하게 되니 money 변수는 6500을 가진다.
+		ctm1.setBuyDate(new Date());
+		ctm1.setItem(menu[num-1]);
 		
 		System.out.println(ctm1);
 		

@@ -40,7 +40,7 @@ public class Buyer {
 	}
 
 	public String toString() { 
-		return "보유머니 : "+money+"원";
+		return "보유머니 : "+money+"원 구매일 : "+this.buyDate+" 구매음료 "+this.item;
 	}
 	
 	
