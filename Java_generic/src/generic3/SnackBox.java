@@ -8,4 +8,5 @@ public class SnackBox<T>{
 		System.out.println(this.과자);
 		System.out.println("과자 박스만들기");
 	}
+	
 }
