@@ -15,8 +15,8 @@ public class DBConnect {
 	}
 	
 	private void connection() {
-		// 드라이버 로드
 		try {
+			// 드라이버 로드
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			// 계정 로그인
 			String user = "jsy9845";

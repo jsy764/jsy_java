@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class MemberDao extends DBConnect {
 	
 	//테이블에서 데이터 
-	public void select() {
+	public ArrayList<Member> select() {
 		String sql = "select * from member1";
 		ArrayList<Member> list = new ArrayList<>();
 		try {
@@ -23,6 +23,6 @@ public class MemberDao extends DBConnect {
 		}catch(SQLException e) {
 			System.out.println("member1 전체 조회 실패");
 		}
-		
+		return list;
 	}
 }
