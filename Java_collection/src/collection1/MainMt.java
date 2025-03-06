@@ -30,6 +30,25 @@ public class MainMt {
 		list.remove(0); // 인덱스를 지정하여 해당 데이터 삭제
 		list.remove("포카칩"); // 삭제할 데이터 입력하여 삭제
 		System.out.println(list);
+		
+		for(int i=0; i<list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		
+		for(Object o : list) {
+			System.out.println(o);
+		}
+		
+		list.add(1, "내가 원하는곳");
+		
+		System.out.println(list);
+		
+		System.out.println(list.contains("장미란"));
+		
+		list.clear(); // 배열모두 삭제
+		
+		
+		
 	}
 
 }
