@@ -1,10 +1,15 @@
 package collection5;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Mainq {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		// FIFO - 구조
+		Queue<Integer> q = new LinkedList<>();
+		
 	}
 
 }
