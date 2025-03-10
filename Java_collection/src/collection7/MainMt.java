@@ -50,19 +50,19 @@ public class MainMt {
 			System.out.println(ent.getKey()+ " " + ent.getValue());
 		}
 		
-//		HashMap<String, Active> cmd = new HashMap<>();
-//		cmd.put("회원가입", new Member());
-//		cmd.put("게시판", new Board());
-//		cmd.put("게임", new Game());
-//		
-//		cmd.get("게시판").save();
-//		cmd.get("회원가입").save();
-//		cmd.get("게임").save();
-//		
-//		String command = "게시판";
-//		
-//		Active action = cmd.get(command);
-//		action.save();
+		HashMap<String, Active> cmd = new HashMap<>();
+		cmd.put("회원가입", new Member());
+		cmd.put("게시판", new Board());
+		cmd.put("게임", new Game());
+		
+		cmd.get("게시판").save();
+		cmd.get("회원가입").save();
+		cmd.get("게임").save();
+		
+		String command = "게시판";
+		
+		Active action = cmd.get(command);
+		action.save();
 		
 		
 	}
