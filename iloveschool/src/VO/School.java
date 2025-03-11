@@ -21,6 +21,6 @@ public class School {
 	private String fax;
 	private String education_office;
 	private String public_private;
-	private String hompage;
+	private String homepage;
 	
 }
