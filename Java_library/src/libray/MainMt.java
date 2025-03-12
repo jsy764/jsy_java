@@ -20,6 +20,10 @@ public class MainMt {
 		submit.add(false);
 		submit.add(false);
 		
+		BookDAO dao = new BookDAO();
+		
+		dao.data(book, author, submit);
+		
 	}
 
 }
