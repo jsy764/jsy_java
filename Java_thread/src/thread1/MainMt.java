@@ -4,14 +4,25 @@ public class MainMt {
 
 	public static void main(String[] args) {
 		
-
+		MyThread th1 = new MyThread("장은호");
+		th1.start();
+		
+		MyThread th2 = new MyThread("김명준");
+		th2.start();
+		
+		for(int i=1; i<=10; i++) {
+			System.out.println(i+"main메서드");
+			try {
+				Thread.sleep(1200);
+			}catch(Exception e) {}
+		}
 	}
 
 }
 
 //스레드
 /*
-	프로세스란? - 운영체제 (위도우같은거)에서 프로그램을 실행시키는 단위
+	프로세스란? - 운영체제 (윈도우같은거)에서 프로그램을 실행시키는 단위
 		  운영체제에서 프로그램을 실행시키려면 관리가 필요하다.
 		  운영체제에 의해서 프로그램이 실행 되는것이고 각 프로그램의 메모리는 운영체제로부터
 		  할당받아 사용하게된다. 모든 프로세스는 고유한 아이디를 갖는다.
