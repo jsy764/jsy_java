@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* signIn.css */
+
+#main{
+	width:100%;
+	padding:100px 0;
+	text-align:center;
+}
+#formWrap{
+	width:400px;
+	margin:0 auto;
+}
+#formWrap .input-field{
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+#formWrap .input-field label{
+	width:100px;
+	font-size:25px;
+}
