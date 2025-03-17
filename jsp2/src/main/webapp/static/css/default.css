@@ -53,6 +53,27 @@ img{ width:100%;}
 	color:#fff;
 	background:#555;
 }
+#nav .right .login-wrap{ width:100%; }
+#nav .right .login-wrap .login-bt{
+	display: block;
+	padding:15px 0;
+	background:pink;
+	text-align:center;
+	border-radius:10px;
+}
+
 
 
 /* foot 부분의 스타일 */
+#foot{
+	width:100%;
+	padding:50px 80px;
+	border-top:3px solid #ccc;
+	margin-top: 50px;
+}
+#foot .address b:nth-child(2){
+	margin: 0 20px;
+}
+#foot .logo{
+	width: 200px;
+}

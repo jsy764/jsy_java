@@ -5,29 +5,40 @@
 <head>
 <meta charset="UTF-8">
 <title>LOVE</title>
-
-</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="icon" href="./static/images/bird-6043004_640.ico">
 <link rel="stylesheet" href="./static/css/default.css">
+<link rel="stylesheet" href="./static/css/main.css">
+</head>
 <body>
 	<div id="wrap">
 		<%@ include file="./header.jsp" %>
 		
 		<div id="main">
 			<div id="slide-wrap">
-				<img src="https://picsum.photos/1000/400?random=1">
+			   <div class="slide-img">
+				 <img src="https://picsum.photos/1000/400?random=1">
+			   </div>
+			   <p class="arrow">
+			  	 <span class="arrow-left">
+			  	 	<i class="bi bi-arrow-left-circle-fill"></i>
+			  	 </span>
+			  	 <span class="arrow-right">
+			  	 	<i class="bi bi-arrow-left-circle-fill"></i>
+			  	 </span>
+			   </p>
 			</div>
 			
 			<div id="content-wrap">
-				<img src="https://picsum.photos/1000/400?random=2">
-				<img src="https://picsum.photos/1000/400?random=3">
-				<img src="https://picsum.photos/1000/400?random=4">
-				<img src="https://picsum.photos/1000/400?random=5">
-				<img src="https://picsum.photos/1000/400?random=6">
-				<img src="https://picsum.photos/1000/400?random=7">
-				<img src="https://picsum.photos/1000/400?random=8">
-				<img src="https://picsum.photos/1000/400?random=9">
-				<img src="https://picsum.photos/1000/400?random=10">
+				<img src="https://picsum.photos/300/400?random=2">
+				<img src="https://picsum.photos/300/400?random=3">
+				<img src="https://picsum.photos/300/400?random=4">
+				<img src="https://picsum.photos/300/400?random=5">
+				<img src="https://picsum.photos/300/400?random=6">
+				<img src="https://picsum.photos/300/400?random=7">
+				<img src="https://picsum.photos/300/400?random=8">
+				<img src="https://picsum.photos/300/400?random=9">
+				<img src="https://picsum.photos/300/400?random=10">
 			</div>
 		</div>
 		
