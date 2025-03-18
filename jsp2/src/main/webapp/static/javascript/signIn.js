@@ -5,7 +5,7 @@
  
  
 window.onload=function(){
-	let bt = document.getElemntsByClassName("signIn-bt")[0];
+	let bt = document.getElementsByClassName("signIn-bt")[0];
 	bt.disabled=true;
 	
 	let inputId = document.getElementById("userId");

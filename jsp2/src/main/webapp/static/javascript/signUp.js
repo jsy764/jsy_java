@@ -2,7 +2,7 @@
  * 
  */
 
- document.onload=function(){
+
 	 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("joinBt").disabled = true; // 회원가입 버튼 비활성화
     document.getElementById("email").focus();
@@ -80,5 +80,3 @@
         });
     });
 });
-
- }

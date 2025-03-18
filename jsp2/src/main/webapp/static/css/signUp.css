@@ -33,6 +33,7 @@
 }
 #formData .inputField .focus{
 	top:-17px; color:#555;
+	font-size : 13px;
 }
 #formData .inputField select{
 	border:0;

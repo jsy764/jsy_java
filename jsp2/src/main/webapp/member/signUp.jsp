@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+<% 
+	String path="http://localhost:8080/jsp2/";
+%>    
 
 <!DOCTYPE html>
 <html>
@@ -12,6 +14,8 @@
 <link rel="icon" href="http://localhost:8080/jsp2/static/images/loveicon.ico">
 <link rel="stylesheet" href="http://localhost:8080/jsp2/static/css/default.css">
 
+<link rel="stylesheet" href="<%=path %>static/css/signUp.css">
+<script src="<%=path %>static/javascript/signUp.js"></script>
 </head>
 <body>
 	
@@ -20,7 +24,7 @@
 	                   
 	    <div id="main">
 	    	
-		<form method="post" action="/movie/signUp">
+		<form method="post" action="signUpSave.jsp">
 		
 			<div id="formData">
 				<div class="inputField">
