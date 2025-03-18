@@ -16,7 +16,7 @@
 		</div>
 		<div class="top right">
 			<div class="login-wrap">
-				<a href="http://localhost:8080/jsp2/member/signIn.jsp" class="login-bt">러브로그인</a>
+				<a href="/jsp2/signin" class="login-bt">러브로그인</a>
 			</div>
 		</div>
 	</div>

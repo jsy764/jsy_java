@@ -28,11 +28,11 @@
 		
 			<div id="formData">
 				<div class="inputField">
-					<input type="email" id="email">
+					<input type="email" name="email" id="email">
 					<label for="email">이메일</label>
                 </div>
 				<div class="inputField">
-					<input type="password" id="password" class="pwChk">
+					<input type="password" name="password" id="password" class="pwChk">
 					<label for="password">비밀번호</label>	
 				</div>
 				<div class="inputField">
@@ -42,18 +42,18 @@
 					</label>		
 				</div>
 				<div class="inputField">
-					<input type="text" id="name">
+					<input type="text" name="name" id="name">
 					<label for="name">이름</label>		
 				</div>
 				<div class="inputField">
-					<input type="text" id="tel">
+					<input type="text" name="tel" id="tel">
 					<label for="tel">연락처</label>	
 				</div>
 				<div class="inputField">
 					<b>생일 년월</b>
-					<select id="birthYear" ></select>	
+					<select id="birthYear" name="birthYear"></select>	
 					<label for="birthYear">년</label>	
-					<select id="birthMonth" ></select>
+					<select id="birthMonth" name="birthMonth"></select>
 					<label for="birthMonth">월</label>
 				</div>
 				
