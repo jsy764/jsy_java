@@ -25,4 +25,8 @@ window.onload=function(){
 			bt.disabled=true;
 		}
 	});
+	
+	document.getElementsByClassName("join")[0].addEventListener("click", function(){
+		location.href="signUp.jsp";
+	});
 };
