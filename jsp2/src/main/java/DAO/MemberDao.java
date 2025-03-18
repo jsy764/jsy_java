@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class MemberDao {
 	
@@ -14,7 +15,22 @@ public class MemberDao {
 	public MemberDao() {
 		connect();
 	}
-	private void connect() {
+	public boolean loginCheck(String email, String pw) {
+		String sql = "select * from test_member "+
+				"where email=? and password=?";
+		try {
+			pt = conn.prepareStatement(sql);
+			pt.setString(1, email);
+			pt.setString(2, pw);
+			rs=pt.executeQuery();
+			if(rs.next()) return true;
+		}catch(SQLException e) {
+			System.out.println("아이디 비번 조회 실패");
+			e.printStackTrace();
+		}
+		return false;
+	}
+	private void connect() {	
 		try{
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
