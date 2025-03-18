@@ -14,10 +14,18 @@
 				<li class="menu">특급칭찬이야</li>
 			</ul>
 		</div>
+		<%
+			String user = (String)session.getAttribute("user");
+		%>
 		<div class="top right">
+			<% if(user != null){ %>
+				<b> <%=user %></b>
+				
+			<% } else { %>
 			<div class="login-wrap">
 				<a href="/jsp2/signin" class="login-bt">러브로그인</a>
 			</div>
+			<%} %>
 		</div>
 	</div>
 </div>    

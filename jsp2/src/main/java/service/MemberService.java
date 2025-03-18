@@ -1,5 +1,6 @@
 package service;
 
+import DAO.MemberDao;
 import jakarta.servlet.http.HttpServletRequest;
 
 public class MemberService {
@@ -9,7 +10,11 @@ public class MemberService {
 		String email = request.getParameter("userId");
 		String pass = request.getParameter("userPw");
 		
+		MemberDao dao = new MemberDao();
 		
+		if(dao.loginCheck(email, pass)) {
+			request.getSession().setAttribute("user", email);
+		}
 	}
 }
 // 클라이언트의 요청 처리 흐름

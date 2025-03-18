@@ -6,6 +6,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import service.MemberService;
+
 import java.io.IOException;
 
 /**
@@ -39,7 +41,8 @@ public class Main extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 로그인 처리와 메인페이지 제공
 		
-		
+		MemberService ms = new MemberService();
+		ms.login(request);
 		response.sendRedirect("/jsp2"); // 메인페이지 - webapp밑에 있는 index.jsp
 	}
 
